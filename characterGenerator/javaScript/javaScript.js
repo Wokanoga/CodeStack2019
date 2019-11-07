@@ -9,8 +9,6 @@
 // oathID: 213673598023-tvcoasvrm4d1dt6gu2hm2e2b2agdb53s.apps.googleusercontent.com
 // secret: LEqRZHi7DG_UWLWPNiTNSIBd
 
-console.log(plainStatRolls());
-
 function randomStat(attribute) {
     let diceRolls = [
         Math.floor(Math.random() * 6) + 1,
