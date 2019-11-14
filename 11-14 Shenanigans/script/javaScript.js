@@ -126,6 +126,9 @@ function generateStuff() {
 
         let title = document.createElement('h2');
         title.innerText = obj.Title;
+        title.addEventListener('click', function(){
+
+        })
 
         let ul = document.createElement('ul');
         obj.thingsToDo.forEach(ToDo => {
@@ -141,3 +144,14 @@ function generateStuff() {
 }
 
 generateStuff();
+
+
+let hoverArea = document.getElementById('hoverArea');
+
+hoverArea.addEventListener('mouseover', function(){
+    hoverArea.setAttribute('class', 'red');
+});
+
+hoverArea.addEventListener('mouseout', function(){
+    hoverArea.setAttribute('class', 'blue');
+});
