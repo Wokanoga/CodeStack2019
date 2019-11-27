@@ -1,3 +1,4 @@
+//Only the button is required to be a global variable.
 let doTheMath = document.getElementById('doTheMath');
 
 doTheMath.addEventListener('click', function (e) {
