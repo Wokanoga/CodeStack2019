@@ -55,16 +55,34 @@ let randomBtn = document.getElementById('randomBtn');
 let randomNamesArea = document.getElementById('randomNamesArea');
 
 randomBtn.addEventListener('click', function (e) {
+    //clear the area
     randomNamesArea.innerHTML = '';
-    let rNum = Math.floor(Math.random() * names.length);
-    let p = document.createElement('p');
-    p.innerText = names[rNum];
-    randomNamesArea.appendChild(p);
+
+    //declare everything I need
+    let rNum = Math.floor(Math.random() * objArr.length);
+    let col1 = document.createElement('div');
+    let col2 = document.createElement('div');
+    let col3 = document.createElement('div');
+    let pFirst = document.createElement('p');
+    let pLast = document.createElement('p');
+    let pDoes = document.createElement('p');
+
+    //set attributes needed
+    col1.setAttribute('class','col');
+    col2.setAttribute('class','col');
+    col3.setAttribute('class','col');
+
+    //apply content
+    pFirst.innerText = objArr[rNum].first;
+    pLast.innerText = objArr[rNum].last;
+    pDoes.innerText = objArr[rNum].heDoes;
+
+    //append
+    col1.appendChild(pFirst);
+    col2.appendChild(pLast);
+    col3.appendChild(pDoes);
+    randomNamesArea.appendChild(col1);
+    randomNamesArea.appendChild(col2);
+    randomNamesArea.appendChild(col3)
+
 });
-
-
-function deleteArea(parent) {
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
-    }
-}
