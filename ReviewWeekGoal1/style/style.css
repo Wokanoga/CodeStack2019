@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+.container {
+    margin-top: 1rem;
+    background-color: white;
+    border: .3rem transparent solid;
+    border-radius: 1rem;
+}
