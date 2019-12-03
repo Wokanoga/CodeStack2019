@@ -15,7 +15,7 @@ goBtn.addEventListener('click', function(e){
             col.setAttribute('class', 'col');
             for (let p = 0; p < pTagNum; p++){
                 let pTag = document.createElement('p');
-                pTag.innerText = 'Text';
+                pTag.innerText = `R${r} C${c} P${p}`;
                 col.appendChild(pTag);
             }
             row.appendChild(col);
