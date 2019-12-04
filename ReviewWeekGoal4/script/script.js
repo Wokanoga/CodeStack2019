@@ -1,4 +1,5 @@
 let goBtn = document.getElementById('goBtn');
+let counter = 0;
 
 goBtn.addEventListener('click', function(e){
     let elementArea = document.getElementById('elementArea');
@@ -16,6 +17,8 @@ goBtn.addEventListener('click', function(e){
             for (let p = 0; p < pTagNum; p++){
                 let pTag = document.createElement('p');
                 pTag.innerText = `R${r} C${c} P${p}`;
+                pTag.setAttribute('id', `pTag${counter}`)
+                counter++;
                 col.appendChild(pTag);
             }
             row.appendChild(col);

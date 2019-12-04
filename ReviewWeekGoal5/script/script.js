@@ -43,7 +43,7 @@ formGenerateBtn.addEventListener('click', async function() {
     console.log(div);
     formRow.appendChild(div);
     console.log(formRow);
-    div.innerHTML = '';
+    //div.innerHTML = '';
     console.log(formRow);
     label.setAttribute('for', 'inputPassword4');
     label.innerText = 'Password';
@@ -54,9 +54,9 @@ formGenerateBtn.addEventListener('click', async function() {
     div.appendChild(label);
     div.appendChild(input);
     formRow.appendChild(div);
-    div.innerHTML = ''
+    //div.innerHTML = ''
     form.appendChild(formRow);
-    formRow.innerHTML = '';
+    //formRow.innerHTML = '';
 
     //TWO FORMGROUPS
     // <div class="form-group">
@@ -78,7 +78,7 @@ formGenerateBtn.addEventListener('click', async function() {
     formGroup.appendChild(input);
 
     form.appendChild(formGroup);
-    formGroup.innerHTML = '';
+    //formGroup.innerHTML = '';
 
     label.setAttribute('for', 'inputAddress2');
     label.innerText = 'Address 2';
@@ -89,7 +89,7 @@ formGenerateBtn.addEventListener('click', async function() {
     formGroup.appendChild(input);
 
     form.appendChild(formGroup);
-    formGroup.innerHTML = '';
+    //formGroup.innerHTML = '';
 
     //SECOND FORM ROW
     // <div class="form-row">
@@ -121,7 +121,7 @@ formGenerateBtn.addEventListener('click', async function() {
     div.appendChild(input);
 
     formRow.appendChild(div);
-    div.innerHTML = '';
+    //div.innerHTML = '';
 
     div.setAttribute('class', 'form-group col-md-4');
     label.setAttribute('for', 'inputState');
@@ -138,7 +138,7 @@ formGenerateBtn.addEventListener('click', async function() {
     div.appendChild(select);
 
     formRow.appendChild(div);
-    div.innerHTML = '';
+    //div.innerHTML = '';
 
     div.setAttribute('class', 'form-group col-md-2');
     label.setAttribute('for', 'inputZip');
@@ -151,10 +151,10 @@ formGenerateBtn.addEventListener('click', async function() {
     div.appendChild(input)
 
     formRow.appendChild(div);
-    div.innerHTML = '';
+    //div.innerHTML = '';
 
     form.appendChild(formRow);
-    formRow.innerHTML = '';
+    //formRow.innerHTML = '';
 
     //LAST FORM GROUP
     // <div class="form-group">
@@ -190,4 +190,6 @@ formGenerateBtn.addEventListener('click', async function() {
 
     //last step
     formArea.appendChild(form);
+
+
 });
