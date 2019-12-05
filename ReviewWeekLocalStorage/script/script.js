@@ -6,6 +6,7 @@ let submitTitleBtn = document.getElementById('submitTitleBtn');
 let dropdownMenu = document.getElementById('dropdownMenu');
 let listTitleH2 = document.getElementById('listTitleH2');
 let listItemArea = document.getElementById('listItemArea');
+let counter = 0;
 
 
 //Check for local storage first thing on load.  Set relevant data.
@@ -36,6 +37,7 @@ consoleLogLocalBtn.addEventListener('click', function () {
 
 deleteLocalStorage.addEventListener('click', function(){
     anakin(dropdownMenu);
+    anakin(listItemArea);
     exampleData = [];
     localStorage.removeItem('localArrayKey');
     console.log(localStorage.getItem('localArrayKey'));
@@ -86,12 +88,13 @@ function populateDropDownMenu(){
 function checkListTitle(string){
     for (let i = 0; i < exampleData.length; i++){
         if (exampleData[i].title === string){
-            loadList(exampleData[i].title, exampleData[i].listItems, i);
+            counter = i;
+            loadList(exampleData[i].title, exampleData[i].listItems);
         }
     }
 }
 
-function loadList(title, arr, index){
+function loadList(title, arr){
     //clear list
     //create a p tag for every list item
     //add event listeners to every p tag to delete them.
@@ -103,9 +106,9 @@ function loadList(title, arr, index){
     let listItemsInput = document.getElementById('listItemsInput');
     listItemsInput.addEventListener('keypress', function(e){
         if (e.keyCode === 13){
-            exampleData[index].listItems.push(e.target.value);
+            exampleData[counter].listItems.push(e.target.value);
             saveData();
-            populateListItems(exampleData[index].listItems);
+            populateListItems(exampleData[counter].listItems);
             listItemsInput.value = '';
         }
     });
