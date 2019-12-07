@@ -1,8 +1,9 @@
 let goBtn = document.getElementById('goBtn');
 let counter = 0;
+let elementArea = document.getElementById('elementArea');
+let pTag = document.createElement('p')
 
 goBtn.addEventListener('click', function(e){
-    let elementArea = document.getElementById('elementArea');
     elementArea.innerHTML = '';
     let rowNum = document.getElementById('rowNum').value;
     let colNum = document.getElementById('colNum').value;

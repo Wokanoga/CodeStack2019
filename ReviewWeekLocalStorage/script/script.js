@@ -114,6 +114,7 @@ function loadList(title, arr){
     });
 }
 
+
 function populateListItems(arr) {
     anakin(listItemArea);
     arr.forEach(element => {

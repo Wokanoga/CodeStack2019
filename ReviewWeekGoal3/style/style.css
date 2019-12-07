@@ -1,0 +1,35 @@
+.center-board {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    border: transparent;
+}
+
+body {
+    background-color: black;
+}
+
+.black-square {
+    background-color: darkolivegreen;
+    color: darkolivegreen
+}
+
+.white-square {
+    background-color: beige;
+    color: beige;
+}
+
+.highlight {
+    background-image: url('../assets/images/Mario.png');
+    background-size: cover;
+}
+
+.seeing-red {
+    border-width: 1rem;
+    border-color: sienna;
+    border-style: ridge;
+}

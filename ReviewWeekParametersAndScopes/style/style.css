@@ -1,0 +1,8 @@
+.btn-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col {
+    border: 1px black solid;
+}
