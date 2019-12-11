@@ -26,6 +26,16 @@ deleteData.addEventListener('click', function () {
     saveData();
 });
 
+function populateWeatherList(){
+    //delete area
+    //for loop through example
+    //for () {
+//       generate city list item
+    //}
+}
+
+example[something].url
+
 inputContestant.addEventListener('keypress', function (e) {
     if (e.keyCode === 13) {
         let obj = {

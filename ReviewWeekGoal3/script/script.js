@@ -9,14 +9,6 @@ let chessGrid = [
     ["A1", "B1", "C1", "D1", "E1", "F1", "G1", "H1"]
 ];
 
-let square = {
-    index: 'A8',
-    threatened: false,
-    occupied: 'Empty',
-    lightSquare: true,
-
-}
-
 let boardArea = document.getElementById('boardArea');
 let color = 'white';
 function generateBoard() {
@@ -40,7 +32,7 @@ function generateBoard() {
             }
             button.addEventListener('click', function () {
                 generateBoard();
-                bishopSquares(r, c);
+                knightSquares(r, c);
             });
             div.appendChild(button);
         }
